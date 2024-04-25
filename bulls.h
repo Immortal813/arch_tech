@@ -7,7 +7,7 @@ class bulls
 public:
 	//std::string m_name;
 	//std::string ttt;
-	bulls( std::string);
+	bulls( );
 
 	//std::string ret_str() { return m_name; }
 
