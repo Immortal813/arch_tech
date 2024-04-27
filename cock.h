@@ -2,13 +2,13 @@
 #include "animal.h"
 #include "bulls.h"
 
-class cock:public bulls
+class cock:public animal
 {
 
 public:
 
-	//void name( std::string name1, std::string name2 );
-	cock(  );
+	
+	cock();
 
 
 

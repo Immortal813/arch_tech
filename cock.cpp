@@ -1,6 +1,6 @@
 #include "cock.h"
 
-cock::cock( ) {
+cock::cock() {
 
 	
 
