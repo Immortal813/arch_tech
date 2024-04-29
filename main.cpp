@@ -1,17 +1,37 @@
 ﻿#include <iostream>
 #include "animal.h"
-#include "cock.h"
-#include "bulls.h"
+#include "Builder.h"
 
 int main()
 {
-    
-    std::string animal_name;
 
-    //std::cout << "Hello World!\n";
-    std::cout << "Enter animal name: ";
-    std::cin >> animal_name;
-    bulls b( animal_name );
+	Builder bui;
+	animal *am;
 
-    std::cout << b.get_info();
+	std::string animal_name;
+
+
+
+	//animal *am = bui.creat( animal_name );
+	// animal *am = nullptr;
+
+	while ( animal_name != "exit" && animal_name != "end" ) {
+
+		std::cout << "For the exit type \"exit\" or \"end\"\nEnter animal name: ";
+		std::cin >> animal_name;
+
+
+		am = bui.creat( animal_name );
+		if ( am != nullptr ) {
+
+			std::cout << am->get_info();
+			delete am;
+
+		}
+
+
+	}
+
+
+	return 0;
 }
