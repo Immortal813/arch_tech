@@ -15,11 +15,13 @@ int main()
 	//animal *am = bui.creat( animal_name );
 	// animal *am = nullptr;
 
-	while ( animal_name != "exit" && animal_name != "end" ) {
+	while ( true ) {
 
 		std::cout << "For the exit type \"exit\" or \"end\"\nEnter animal name: ";
 		std::cin >> animal_name;
 
+		if ( animal_name != "exit" && animal_name != "end" )
+			break;
 
 		am = bui.creat( animal_name );
 		if ( am != nullptr ) {
@@ -28,6 +30,8 @@ int main()
 			delete am;
 
 		}
+		else
+			std::cout << "Incorrect animal name!\n";
 
 
 	}
