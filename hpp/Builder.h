@@ -10,6 +10,5 @@ public:
 
 	animal *creat( std::string );
 
-
 };
 

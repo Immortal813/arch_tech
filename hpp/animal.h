@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include <string.h>
+
 
 class animal
 {
@@ -13,6 +13,6 @@ public:
 	virtual std::string get_info()=0;
 
 	virtual ~animal() {};
-	//virtual void test()=0;
+	
 };
 

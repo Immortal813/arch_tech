@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include "animal.h"
 #include "Builder.h"
 
 int main()
@@ -10,10 +9,6 @@ int main()
 
 	std::string animal_name;
 
-
-
-	//animal *am = bui.creat( animal_name );
-	// animal *am = nullptr;
 
 	while ( true ) {
 
