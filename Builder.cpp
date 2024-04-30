@@ -1,5 +1,6 @@
 #include "Builder.h"
 
+
 animal *Builder::creat( std::string name_am ) {
 
 	animal *sasha = nullptr;

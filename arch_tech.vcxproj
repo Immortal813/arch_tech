@@ -127,17 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cpp\Builder.cpp" />
-    <ClCompile Include="cpp\main.cpp" />
+    <ClInclude Include="animal.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="bulls.h" />
+    <ClInclude Include="cock.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hpp\animal.h" />
-    <ClInclude Include="hpp\Builder.h" />
-    <ClInclude Include="hpp\bulls.h" />
-    <ClInclude Include="hpp\cock.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="arch_tech.rc" />
+    <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
