@@ -8,7 +8,7 @@ class bulls :public animal
 private:
 	std::string a_name = "bulls";
 
-public:
+protected:
 
 
 	std::string voice() override { return "EeeBoy"; }

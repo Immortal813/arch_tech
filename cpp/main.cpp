@@ -1,12 +1,15 @@
 ﻿#include <iostream>
+#define inHead
 #include "Builder.h"
+
 
 int main()
 {
 
-	Builder bui;
+	Builder *bui = new Builder;
 	animal *am;
-
+	
+	
 	std::string animal_name;
 
 
@@ -18,7 +21,7 @@ int main()
 		if ( animal_name == "exit" || animal_name == "end" )
 			break;
 
-		am = bui.creat( animal_name );
+		am = bui->creat( animal_name );
 		if ( am != nullptr ) {
 
 			std::cout << am->get_info();

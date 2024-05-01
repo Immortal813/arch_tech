@@ -1,6 +1,6 @@
 #pragma once
 #include "animal.h"
-#include "bulls.h"
+
 
 class cock:public animal
 {
@@ -10,9 +10,9 @@ private:
 	std::string a_name = "cock";
 
 
-public:
+protected:
 
-
+	
 	std::string voice() override { return "Need more bullets!"; }
 	std::string size() override { return "Smoll"; }
 	std::string weight() override { return "Massive"; }
@@ -23,8 +23,6 @@ public:
 		return "Animal name: " + a_name + ", Voice: " + voice() + ", Size: " + size() + ", Weight: " + weight() + "\n";
 
 	}
-
-
 
 };
 
