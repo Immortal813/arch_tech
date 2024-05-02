@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ExecutablePath>E:\Project22\arch_tech\cpp;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>E:\Project22\arch_tech\hpp;$(IncludePath)</IncludePath>
+    <IncludePath>E:\Project22\arch_tech\hpp;E:\Project22\arch_tech\animal_iface;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="hpp\animal.h" />
+    <ClInclude Include="animal_iface\animal.h" />
     <ClInclude Include="hpp\Builder.h" />
     <ClInclude Include="hpp\bulls.h" />
     <ClInclude Include="hpp\cock.h" />

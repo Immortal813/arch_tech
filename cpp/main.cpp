@@ -7,7 +7,7 @@ int main()
 {
 
 	Builder *bui = new Builder;
-	animal *am;
+	animal *am ;
 	
 	
 	std::string animal_name;

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hpp\animal.h">
+    <ClInclude Include="animal_iface\animal.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="hpp\Builder.h">
