@@ -6,10 +6,10 @@ class bulls :public animal
 {
 
 private:
+
 	std::string a_name = "bulls";
 
 protected:
-
 
 	std::string voice() override { return "EeeBoy"; }
 	std::string size() override { return "Huge"; }

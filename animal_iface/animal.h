@@ -1,11 +1,12 @@
 #pragma once
 #include <iostream>
 
-
+// Интерфейс для реализация разной информации о животных
 class animal
 {
 
 public:
+	
 	virtual std::string voice() = 0;
 	virtual std::string size() = 0;
 	virtual std::string weight()=0;
